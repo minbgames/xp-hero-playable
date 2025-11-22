@@ -45,7 +45,8 @@ export default class GameScene extends Phaser.Scene {
         const islandY = (1200 - islandHeight) / 2;
 
         // Draw Island Base
-        this.add.tileSprite(800, 600, islandWidth, islandHeight, 'grass');
+        const island = this.add.tileSprite(800, 600, islandWidth, islandHeight, 'grass');
+        island.setTileScale(0.1);
 
         // Setup Physics World bounds to match the island
         this.physics.world.setBounds(islandX, islandY, islandWidth, islandHeight);
@@ -56,8 +57,8 @@ export default class GameScene extends Phaser.Scene {
         // Create Player
         this.player = new Player(this, 800, 600); // Center of world
         // Scale down if the generated image is too big (usually 1024x1024)
-        this.player.setScale(0.15);
-        this.player.body?.setCircle(this.player.width * 0.3); // Adjust hitbox
+        this.player.setScale(0.05);
+        this.player.body?.setCircle(this.player.width * 0.4); // Adjust hitbox
 
         // Camera follow
         this.cameras.main.setBounds(0, 0, 1600, 1200);

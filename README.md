@@ -1,7 +1,17 @@
 # XPHero Playable Ad MVP
 
+<p align="center">
+  <img src="src/images/game_play.png" width="45%" />
+  <img src="src/images/game_result.png" width="45%" />
+</p>
+
 ## 프로젝트 설명
+
 이 프로젝트는 **XPHero 모바일 게임을 플레이어블 HTML5로 만드는 것을 AntiGravity를 통해서 얼마나 잘 만들 수 있는지 확인하기 위해** 진행된 프로젝트입니다.
+
+**Reference Game:** [XPHero (Google Play)](https://play.google.com/store/apps/details?hl=en-US&id=io.supercent.weaponrpg)
+
+**결론적으로, 이 프로젝트는 플레이어블 광고를 제작하는 데 있어 유의미한 결과를 얻지 못했다는 결론을 내렸습니다.**
 
 ## 개요
 **Phaser 3**, **TypeScript**, **Vite**를 사용하여 제작되었습니다. 광고 네트워크 배포를 용이하게 하기 위해 단일 HTML 파일로 빌드되도록 설정되어 있습니다.

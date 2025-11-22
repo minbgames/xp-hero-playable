@@ -12,7 +12,8 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         scene.add.existing(this);
         scene.physics.add.existing(this);
 
-        this.setCircle(12); // Slightly smaller than player
+        this.setCircle(this.width * 0.4); // Slightly smaller than player
+        this.setScale(0.05);
     }
 
     update() {
